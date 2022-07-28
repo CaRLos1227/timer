@@ -2,7 +2,7 @@ let interval;
 let clicked = 0;
 
 const HTS = (hour, minute, second) => hour * 60 * 60 + minute * 60 + parseInt(second);
-const CSTH = seconds =>  {
+const CSTH = seconds => {
   const hour = Math.floor(seconds / 3600);
   const minute = Math.floor(seconds % 3600 / 60);
   const second = Math.floor(seconds % 3600 % 60);
